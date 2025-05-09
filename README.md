@@ -1,2 +1,2 @@
 # zw
-My new repo for completing school projects. 
+Repository for academic projects. 
