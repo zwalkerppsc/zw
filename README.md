@@ -1,34 +1,35 @@
-----------
+# README.md
 
-This repo is now my testing environment for my personal portfolio on GitHub. 
+This repository serves as a personal testing environment and GitHub portfolio.
 
-First project being the creation of a Bash script that prints the numbers 1-50 in sequence.
+The first project is a Bash script that prints the numbers 1–50 in sequence, using a `for` loop and a variable reference to display each number on its own line.
 
-Utilizing a Bash 'for' loop and a variable reference to print the numbers 1 to 50 once per line. 
+---
 
-----------
+## Script
+
+```Bash
 
 #!/bin/bash
-# Counter.sh - Prints numbers from 1 to 50.
+# Counter.sh – Prints numbers from 1 to 50.
 
 for i in {1..50}; do
   echo $i
 done
 
-----------
+```
+---
 
-#!/bin/bash               <-            Shebang line. Tells the OS to use the Bash shell interpreter to run this script. 
-# Counter.sh - Prints numbers from 1 to 50. <- Commented out using #, meaning it is not executed. It's just the filename and description.
+```
+#!/bin/bash         ← Shebang line – specifies Bash shell interpreter
+# Comment            ← Not executed – describes the purpose of the file
 
-for i in {1..50}; do      <- 'for'      Starts the loop that repeats a block of code
-                              'i'       The loop control variable that takes on the value of each number 'in' the set 
-                           '{1..50}'    Uses a Brace Expansion which generates a list from the first value (1) to the second value (50)
-                              'do'      Begins the body of the loop, runs once per iteration 
-                         
-  echo $i                 <- 'echo'     Prints text to the terminal
-                              '$i'      Retrieve the current value of the loop variable  
-                              
-done                      <- 'done'     Closes the loop block that began with 'do'
+for i in {1..50}; do  ← 'for' loop starts; 'i' is the loop variable
+                        '{1..50}' is brace expansion (1 to 50)
+                        'do' begins the loop block
 
-----------
+echo $i               ← Prints current value of $i
 
+done                  ← Ends the loop block
+
+```
